@@ -4,6 +4,14 @@
 
 Generates and prints a secure random string (and other types) to terminal.
 
+## Install
+Install `go` then run
+```bash
+go install github.com/AmrSaber/random
+```
+
+Then you can access the command as `random`.
+
 ## Usage
 After installation, use `random <command>`, you can use `random <command> -h` to show help message related to that command, or use `random -h` to list all the available commands and options.
 
