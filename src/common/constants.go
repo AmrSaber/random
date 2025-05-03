@@ -35,3 +35,15 @@ var (
 
 const DEFAULT_DELIMITER = " "
 const DEFAULT_STRING_LENGTH = 20
+
+const (
+	ID_TYPE_UUID4 = "uuidv4"
+	ID_TYPE_UUID7 = "uuidv7"
+	ID_TYPE_NANO  = "nanoid"
+)
+
+var ID_TYPES = []string{
+	ID_TYPE_UUID4,
+	ID_TYPE_UUID7,
+	ID_TYPE_NANO,
+}
