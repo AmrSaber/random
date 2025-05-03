@@ -7,7 +7,7 @@ Generates and prints a secure random string (and other types) to terminal.
 ## Install
 Install `go` then run
 ```bash
-go install github.com/AmrSaber/random
+go install github.com/AmrSaber/random@latest
 ```
 
 Then you can access the command as `random`.

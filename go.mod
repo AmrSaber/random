@@ -1,4 +1,4 @@
-module github.com/AmrSaber/random
+module github.com/AmrSaber/random/v3
 
 go 1.24.2
 

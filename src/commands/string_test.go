@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/AmrSaber/random/src/common"
-	"github.com/AmrSaber/random/src/common/tests"
+	"github.com/AmrSaber/random/v3/src/common"
+	"github.com/AmrSaber/random/v3/src/common/tests"
 
 	"github.com/urfave/cli/v2"
 )

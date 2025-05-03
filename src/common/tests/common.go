@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"log"
 
-	"github.com/AmrSaber/random/src/common"
+	"github.com/AmrSaber/random/v3/src/common"
 )
 
 func SetupTest() (*bytes.Buffer, func()) {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/AmrSaber/random/src/common"
+	"github.com/AmrSaber/random/v3/src/common"
 )
 
 // returns a random floating point number created with

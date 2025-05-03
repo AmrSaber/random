@@ -3,8 +3,8 @@ package commands
 import (
 	"strings"
 
-	"github.com/AmrSaber/random/src/common"
-	"github.com/AmrSaber/random/src/common/helpers"
+	"github.com/AmrSaber/random/v3/src/common"
+	"github.com/AmrSaber/random/v3/src/common/helpers"
 
 	"github.com/urfave/cli/v2"
 )
