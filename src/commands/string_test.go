@@ -1,10 +1,11 @@
 package commands
 
 import (
-	"random/src/common"
-	"random/src/common/tests"
 	"strings"
 	"testing"
+
+	"github.com/AmrSaber/random/src/common"
+	"github.com/AmrSaber/random/src/common/tests"
 
 	"github.com/urfave/cli/v2"
 )

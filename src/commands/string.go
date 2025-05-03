@@ -2,10 +2,11 @@ package commands
 
 import (
 	"fmt"
-	"random/src/common"
-	"random/src/common/helpers"
 	"slices"
 	"strings"
+
+	"github.com/AmrSaber/random/src/common"
+	"github.com/AmrSaber/random/src/common/helpers"
 
 	"github.com/urfave/cli/v2"
 )

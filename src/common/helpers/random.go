@@ -4,7 +4,8 @@ import (
 	"crypto/rand"
 	"fmt"
 	"math"
-	"random/src/common"
+
+	"github.com/AmrSaber/random/src/common"
 )
 
 // returns a random floating point number created with

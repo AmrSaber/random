@@ -1,9 +1,10 @@
 package commands
 
 import (
-	"random/src/common"
-	"random/src/common/helpers"
 	"strings"
+
+	"github.com/AmrSaber/random/src/common"
+	"github.com/AmrSaber/random/src/common/helpers"
 
 	"github.com/urfave/cli/v2"
 )

@@ -2,8 +2,9 @@ package main
 
 import (
 	"os"
-	"random/src/commands"
-	"random/src/common"
+
+	"github.com/AmrSaber/random/src/commands"
+	"github.com/AmrSaber/random/src/common"
 
 	"github.com/urfave/cli/v2"
 )

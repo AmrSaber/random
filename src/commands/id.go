@@ -2,9 +2,10 @@ package commands
 
 import (
 	"fmt"
-	"random/src/common"
 	"slices"
 	"strings"
+
+	"github.com/AmrSaber/random/src/common"
 
 	"github.com/google/uuid"
 	gonanoid "github.com/matoous/go-nanoid/v2"

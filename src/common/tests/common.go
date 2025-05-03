@@ -3,7 +3,8 @@ package tests
 import (
 	"bytes"
 	"log"
-	"random/src/common"
+
+	"github.com/AmrSaber/random/src/common"
 )
 
 func SetupTest() (*bytes.Buffer, func()) {
