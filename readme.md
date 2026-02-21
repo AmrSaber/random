@@ -6,6 +6,13 @@ Generates and prints a secure random string (and other types) to terminal.
 
 ## Install
 
+### Using Homebrew
+
+```bash
+brew tap AmrSaber/tap
+brew install random
+```
+
 ### Using Go
 
 Install `go` then run
