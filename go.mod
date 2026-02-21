@@ -1,6 +1,6 @@
 module github.com/AmrSaber/random/v3
 
-go 1.24.2
+go 1.26.0
 
 require (
 	github.com/fatih/color v1.18.0
