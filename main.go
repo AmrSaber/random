@@ -9,10 +9,22 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
+var version string
+
 func main() {
+	if version != "" {
+		common.SetVersion(version)
+	}
+
+	v := common.GetVersion()
+	if v == "" {
+		v = "??"
+	}
+
 	app := &cli.App{
 		Name:        "random",
 		Description: "CLI tool to generate random data",
+		Version:     v,
 		Commands:    []*cli.Command{commands.StringCommand, commands.ShuffleCommand, commands.PickCommand, commands.IdCommand},
 	}
 
