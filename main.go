@@ -1,12 +1,9 @@
+// Package main is the entry point for the random CLI.
 package main
 
 import (
-	"os"
-
-	"github.com/AmrSaber/random/v3/src/commands"
+	"github.com/AmrSaber/random/v3/src/cmd"
 	"github.com/AmrSaber/random/v3/src/common"
-
-	"github.com/urfave/cli/v2"
 )
 
 var version string
@@ -21,15 +18,10 @@ func main() {
 		v = "??"
 	}
 
-	app := &cli.App{
-		Name:        "random",
-		Description: "CLI tool to generate random data",
-		Version:     v,
-		Commands:    []*cli.Command{commands.StringCommand, commands.ShuffleCommand, commands.PickCommand, commands.IdCommand},
-	}
+	rootOpts := &common.RootOptions{Count: 1}
+	rootCmd := cmd.NewRootCommand(v, rootOpts)
 
-	// Run CLI
-	if err := app.Run(os.Args); err != nil {
+	if err := rootCmd.Execute(); err != nil {
 		common.Fail(err)
 	}
 }

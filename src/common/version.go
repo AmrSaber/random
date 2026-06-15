@@ -8,10 +8,12 @@ import (
 
 var version string
 
+// SetVersion overrides the detected version, typically during build time.
 func SetVersion(v string) {
 	version = v
 }
 
+// GetVersion returns the build version, falling back to git describe when unset.
 func GetVersion() string {
 	if version != "" {
 		return version

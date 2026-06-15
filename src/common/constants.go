@@ -1,49 +1,75 @@
+// Package common provides shared constants, helpers, and state for the random CLI.
 package common
 
-// Boolean type constants
-const (
-	BOOLEAN_TYPE_TRUE_FALSE string = "true_false"
-	BOOLEAN_TYPE_NUMERIC    string = "numeric"
-	BOOLEAN_TYPE_YES_NO     string = "yes_no"
-)
+// BooleanTypeTrueFalse identifies the true/false boolean style.
+const BooleanTypeTrueFalse string = "true_false"
 
-// String type constants
-const (
-	STRING_TYPE_HEX      string = "hex"
-	STRING_TYPE_ASCII    string = "ascii"
-	STRING_TYPE_BASE_64  string = "base64"
-	STRING_TYPE_NUMBERS  string = "numbers"
-	STRING_TYPE_LETTERS  string = "letters"
-	STRING_TYPE_EXTENDED string = "extended"
-)
+// BooleanTypeNumeric identifies the numeric boolean style.
+const BooleanTypeNumeric string = "numeric"
 
-var STRING_TYPES = []string{
-	STRING_TYPE_HEX,
-	STRING_TYPE_ASCII,
-	STRING_TYPE_NUMBERS,
-	STRING_TYPE_LETTERS,
-	STRING_TYPE_EXTENDED,
-	STRING_TYPE_BASE_64,
+// BooleanTypeYesNo identifies the yes/no boolean style.
+const BooleanTypeYesNo string = "yes_no"
+
+// StringTypeHex identifies the hexadecimal string type.
+const StringTypeHex string = "hex"
+
+// StringTypeASCII identifies the ASCII alphanumeric string type.
+const StringTypeASCII string = "ascii"
+
+// StringTypeBase64 identifies the base64 string type.
+const StringTypeBase64 string = "base64"
+
+// StringTypeNumbers identifies the numeric-only string type.
+const StringTypeNumbers string = "numbers"
+
+// StringTypeLetters identifies the letter-only string type.
+const StringTypeLetters string = "letters"
+
+// StringTypeExtended identifies the extended symbol string type.
+const StringTypeExtended string = "extended"
+
+// StringTypes enumerates all supported string generation types.
+var StringTypes = []string{
+	StringTypeHex,
+	StringTypeASCII,
+	StringTypeNumbers,
+	StringTypeLetters,
+	StringTypeExtended,
+	StringTypeBase64,
 }
 
-// Possible string values
-var (
-	ASCII_LETTERS = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-	NUMBERS       = []rune("0123456789")
-	HEX_DIGITS    = []rune("0123456789abcdef")
-)
+// ASCIILetters lists all ASCII letters used for random string generation.
+var ASCIILetters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-const DEFAULT_DELIMITER = " "
-const DEFAULT_STRING_LENGTH = 20
+// Numbers lists all numeric digits used for random string generation.
+var Numbers = []rune("0123456789")
 
-const (
-	ID_TYPE_UUID4 = "uuidv4"
-	ID_TYPE_UUID7 = "uuidv7"
-	ID_TYPE_NANO  = "nanoid"
-)
+// HexDigits lists all hexadecimal digits used for random string generation.
+var HexDigits = []rune("0123456789abcdef")
 
-var ID_TYPES = []string{
-	ID_TYPE_UUID4,
-	ID_TYPE_UUID7,
-	ID_TYPE_NANO,
+// DefaultDelimiter is the default separator for list outputs.
+const DefaultDelimiter = " "
+
+// DefaultStringLength is the default length used for generated strings.
+const DefaultStringLength = 20
+
+// IDTypeUUID4 identifies UUID version 4 IDs.
+const IDTypeUUID4 = "uuidv4"
+
+// IDTypeUUID7 identifies UUID version 7 IDs.
+const IDTypeUUID7 = "uuidv7"
+
+// IDTypeNano identifies NanoID IDs.
+const IDTypeNano = "nanoid"
+
+// IDTypes enumerates all supported identifier generation types.
+var IDTypes = []string{
+	IDTypeUUID4,
+	IDTypeUUID7,
+	IDTypeNano,
+}
+
+// RootOptions captures global flags shared by the CLI commands.
+type RootOptions struct {
+	Count int
 }
